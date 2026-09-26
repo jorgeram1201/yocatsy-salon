@@ -1,0 +1,414 @@
+/* ==========================
+   RESET
+========================== */
+html{
+    scroll-behavior:smooth;
+}
+
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* ==========================
+   BODY
+========================== */
+body{
+    background:#000;
+    color: white;
+    font-family:'Montserrat',sans-serif;
+}
+/* ==========================
+   NAVIGATION
+========================== */
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:#000;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    padding:25px;
+
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    letter-spacing:4px;
+    font-size:11px;
+
+    transition:opacity .3s ease;
+}
+
+nav a:hover{
+    opacity:.6;
+}
+/* ========================== 
+   HERO
+========================== */
+.hero{
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.hero h1{
+
+    animation:fadeIn 1.5s ease;
+
+    font-size:80px;
+
+    font-weight:300;
+
+    letter-spacing:10px;
+
+}
+
+.hero h2{
+
+    font-size:40px;
+
+    font-weight:300;
+
+    letter-spacing:16px;
+
+    margin-top:-15px;
+}
+
+.hero p{
+
+    margin-top:35px;
+
+    letter-spacing:8px;
+
+    font-size:14px;
+}
+
+.hero button{
+
+    margin-top:50px;
+
+    color:white;
+
+    background:none;
+
+    border:1px solid white;
+
+    padding: 20px 70px;
+
+    border-radius:50px;
+
+    letter-spacing:4px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.hero button:hover {
+
+    background:white;
+    color:black;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 25px rgba(255,255,255,.15);
+}
+/* ==========================
+   SERVICES
+========================== */
+.services{
+    width:min(65%,900px);    
+    margin:120px auto;
+}
+
+.services h2{
+    text-align:center;
+    font-size:32px;
+    font-weight:300;
+    letter-spacing:8px;
+    margin-bottom:50px;
+}
+.services p{
+    text-align:center;
+    color:rgba(255,255,255,.6);
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:40px;
+}
+
+.services a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    color:white;
+    text-decoration:none;
+
+    padding:25px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    font-size:22px;
+    letter-spacing:2px;
+
+    transition:all .3s ease;
+}
+
+.services a:hover{
+
+    background:rgba(255,255,255,.03);
+
+}
+
+.services a:hover .service-name{
+
+    padding-left:12px;
+
+}
+
+.services a:hover .arrow{
+
+    transform:translateX(10px);
+
+    opacity:1;
+}
+
+.services span{
+    opacity:.6;
+}
+.service-name{
+    transition: .3s ease;
+}
+
+.arrow{
+    opacity: .5;
+    transition: .3s ease;
+}
+/* ==========================
+   INSTAGRAM
+========================== */
+
+.instagram{
+
+    width:70%;
+
+    margin:140px auto;
+
+    text-align:center;
+
+}
+
+.instagram h2{
+
+    font-size:32px;
+
+    font-weight:300;
+
+    letter-spacing:8px;
+
+    margin-bottom:20px;
+
+}
+
+.instagram p{
+
+    color:rgba(255,255,255,.6);
+
+    margin-bottom:50px;
+
+    letter-spacing:2px;
+
+}
+
+.instagram-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,220px);
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom:50px;
+
+}
+
+.instagram-grid img{
+
+    width:220px;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+    transition:.3s ease;
+
+    cursor:pointer;
+
+}
+.instagram-link{
+
+    display:inline-block;
+
+    color:white;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    margin-top:20px;
+
+    transition:.3s ease;
+
+}
+
+.instagram-link:hover{
+
+    opacity:.7;
+
+    transform:translateX(6px);
+
+}
+/* ==========================
+   CONTACT
+========================== */
+
+.contact{
+
+    width:70%;
+
+    margin:140px auto;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    font-size:32px;
+
+    font-weight:300;
+
+    letter-spacing:8px;
+
+    margin-bottom:50px;
+
+}
+
+.contact-info{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-info p{
+
+    color:#d0d0d0;
+
+    line-height:1.8;
+
+}
+
+.contact strong{
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+/* ==========================
+   ANIMATIONS
+========================== */
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+nav{
+
+    gap:25px;
+
+    padding:20px;
+
+}
+
+nav a{
+
+    font-size:10px;
+
+}
+.hero h1{
+
+    font-size:58px;
+
+}
+
+.hero h2{
+
+    font-size:28px;
+
+    letter-spacing:10px;
+
+}
+
+.hero p{
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+}
+.instagram-grid{
+
+    grid-template-columns:1fr;
+
+}
+.contact-info{
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+} 
