@@ -153,6 +153,8 @@ nav a:hover{
     font-size:14px;
     letter-spacing:2px;
     margin-bottom:40px;
+        font-weight:400;
+
 }
 
 .services a{
@@ -204,12 +206,12 @@ nav a:hover{
     transition: .3s ease;
 }
 /* ==========================
-   INSTAGRAM
+   ABOUT
 ========================== */
 
-.instagram{
+.about{
 
-    width:70%;
+    width:min(70%,900px);
 
     margin:140px auto;
 
@@ -217,7 +219,7 @@ nav a:hover{
 
 }
 
-.instagram h2{
+.about h2{
 
     font-size:32px;
 
@@ -225,69 +227,39 @@ nav a:hover{
 
     letter-spacing:8px;
 
-    margin-bottom:20px;
+    margin-bottom:40px;
 
 }
 
-.instagram p{
+.about img{
 
-    color:rgba(255,255,255,.6);
+    width:280px;
 
-    margin-bottom:50px;
+    border-radius:8px;
 
-    letter-spacing:2px;
-
-}
-
-.instagram-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,220px);
-
-    justify-content: center;
-
-    gap: 30px;
-
-    margin-bottom:50px;
+    margin-bottom:30px;
 
 }
 
-.instagram-grid img{
+.about p{
 
-    width:220px;
-    height:300px;
+    max-width:650px;
 
-    object-fit:cover;
+    margin:0 auto 30px;
 
-    border-radius:6px;
+    color:rgba(255,255,255,.7);
 
-    transition:.3s ease;
+    line-height:1.8;
+        font-weight:400;
 
-    cursor:pointer;
 
 }
-.instagram-link{
+
+.about .instagram-link{
 
     display:inline-block;
 
-    color:white;
-
-    text-decoration:none;
-
-    letter-spacing:3px;
-
     margin-top:20px;
-
-    transition:.3s ease;
-
-}
-
-.instagram-link:hover{
-
-    opacity:.7;
-
-    transform:translateX(6px);
 
 }
 /* ==========================
@@ -333,6 +305,8 @@ nav a:hover{
     color:#d0d0d0;
 
     line-height:1.8;
+        font-weight:400;
+
 
 }
 
